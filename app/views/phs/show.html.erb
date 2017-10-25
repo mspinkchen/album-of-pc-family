@@ -1,0 +1,6 @@
+<%= @ph.title %>
+<%= @ph.date %>
+<%= image_tag @ph.file_location.url, size: "140x140", class: "img-thumbnail" %>
+<%= simple_format(@ph.description) %>
+
+<p><%= link_to "Back to index", phs_path %></p>
